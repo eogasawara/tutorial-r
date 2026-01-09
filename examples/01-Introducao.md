@@ -135,7 +135,7 @@ round(3.1415, 2)
 ```
 
 ``` r
-?round
+#?round
 mean(dado)
 ```
 
@@ -157,7 +157,7 @@ sample(x = dado, size = 2)
 ```
 
 ```
-## [1] 2 3
+## [1] 2 5
 ```
 
 ``` r
@@ -165,7 +165,7 @@ sample(dado, 2)
 ```
 
 ```
-## [1] 6 1
+## [1] 4 1
 ```
 
 ``` r
@@ -173,11 +173,11 @@ sample(x=dado, size=2, replace=TRUE)
 ```
 
 ```
-## [1] 4 1
+## [1] 3 4
 ```
 
 ``` r
-?sample
+#?sample
 args(sample)
 ```
 

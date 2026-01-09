@@ -35,7 +35,7 @@ args(plot.default)
 
 
 ``` r
-?plot
+#?plot
 ```
 
 

@@ -175,7 +175,7 @@ r[3] <- as.raw(1024)
 ```
 
 ```
-## Warning: valores fora do limite considerados como 0 na coerção para tipo raw
+## Warning: out-of-range values treated as 0 in coercion to raw
 ```
 
 ``` r
@@ -295,7 +295,7 @@ now
 ```
 
 ```
-## [1] "2025-03-31 15:10:48 -03"
+## [1] "2026-01-08 23:42:12 -03"
 ```
 
 ``` r

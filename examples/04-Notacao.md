@@ -173,9 +173,10 @@ baralho[ , 1]
 ```
 
 ```
-##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove  
-## [23] dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco 
-## [45] seis   sete   oito   nove   dez    valete dama   rei   
+##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro
+## [18] cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito  
+## [35] nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama  
+## [52] rei   
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
@@ -363,9 +364,10 @@ baralho[ , 1]
 ```
 
 ```
-##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove  
-## [23] dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco 
-## [45] seis   sete   oito   nove   dez    valete dama   rei   
+##  [1] ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro
+## [18] cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito  
+## [35] nove   dez    valete dama   rei    ás     dois   três   quatro cinco  seis   sete   oito   nove   dez    valete dama  
+## [52] rei   
 ## Levels: ás dois três quatro cinco seis sete oito nove dez valete dama rei
 ```
 
@@ -420,8 +422,8 @@ ordem
 ```
 
 ```
-##  [1] 34 31  8 33 18 50 43 47 35 12  9 28 46 19 22 49 29  3  1 15 37  4 42 38 10 23 48 32 25  6 27 16 44  7 45 52 20 24 41 11 21 17 39 13  2  5 36 26 51 30 14
-## [52] 40
+##  [1] 52 15 17  7  1 11  6 51  4  9 22 24 28 41 37  3  2 27 34 29 10 21 13 47 49 18 31 16  5 14 48 35 26 44 32 38 25 40 30 23
+## [41] 33 36 12 45 43 20 50 19 42 46  8 39
 ```
 
 ``` r
@@ -431,58 +433,58 @@ cartas
 
 ```
 ##      face   naipe valor
-## 34   oito    paus     8
-## 31  cinco    paus     5
-## 8    oito   ouros     8
-## 33   sete    paus     7
-## 18  cinco   copas     5
-## 50 valete espadas    11
-## 43 quatro espadas     4
-## 47   oito espadas     8
-## 35   nove    paus     9
-## 12   dama   ouros    12
-## 9    nove   ouros     9
-## 28   dois    paus     2
-## 46   sete espadas     7
-## 19   seis   copas     6
-## 22   nove   copas     9
-## 49    dez espadas    10
-## 29   três    paus     3
-## 3    três   ouros     3
-## 1      ás   ouros     1
-## 15   dois   copas     2
-## 37 valete    paus    11
-## 4  quatro   ouros     4
-## 42   três espadas     3
-## 38   dama    paus    12
-## 10    dez   ouros    10
-## 23    dez   copas    10
-## 48   nove espadas     9
-## 32   seis    paus     6
-## 25   dama   copas    12
-## 6    seis   ouros     6
-## 27     ás    paus     1
-## 16   três   copas     3
-## 44  cinco espadas     5
-## 7    sete   ouros     7
-## 45   seis espadas     6
 ## 52    rei espadas    13
-## 20   sete   copas     7
-## 24 valete   copas    11
-## 41   dois espadas     2
-## 11 valete   ouros    11
-## 21   oito   copas     8
+## 15   dois   copas     2
 ## 17 quatro   copas     4
-## 39    rei    paus    13
-## 13    rei   ouros    13
-## 2    dois   ouros     2
-## 5   cinco   ouros     5
-## 36    dez    paus    10
-## 26    rei   copas    13
+## 7    sete   ouros     7
+## 1      ás   ouros     1
+## 11 valete   ouros    11
+## 6    seis   ouros     6
 ## 51   dama espadas    12
-## 30 quatro    paus     4
+## 4  quatro   ouros     4
+## 9    nove   ouros     9
+## 22   nove   copas     9
+## 24 valete   copas    11
+## 28   dois    paus     2
+## 41   dois espadas     2
+## 37 valete    paus    11
+## 3    três   ouros     3
+## 2    dois   ouros     2
+## 27     ás    paus     1
+## 34   oito    paus     8
+## 29   três    paus     3
+## 10    dez   ouros    10
+## 21   oito   copas     8
+## 13    rei   ouros    13
+## 47   oito espadas     8
+## 49    dez espadas    10
+## 18  cinco   copas     5
+## 31  cinco    paus     5
+## 16   três   copas     3
+## 5   cinco   ouros     5
 ## 14     ás   copas     1
+## 48   nove espadas     9
+## 35   nove    paus     9
+## 26    rei   copas    13
+## 44  cinco espadas     5
+## 32   seis    paus     6
+## 38   dama    paus    12
+## 25   dama   copas    12
 ## 40     ás espadas     1
+## 30 quatro    paus     4
+## 23    dez   copas    10
+## 33   sete    paus     7
+## 36    dez    paus    10
+## 12   dama   ouros    12
+## 45   seis espadas     6
+## 43 quatro espadas     4
+## 20   sete   copas     7
+## 50 valete espadas    11
+## 19   seis   copas     6
+## 42   três espadas     3
+## 46   sete espadas     7
+## 8    oito   ouros     8
+## 39    rei    paus    13
 ```
 
 
@@ -497,57 +499,57 @@ cartas
 
 ```
 ##      face   naipe valor
-## 2    dois   ouros     2
-## 8    oito   ouros     8
-## 48   nove espadas     9
-## 19   seis   copas     6
-## 14     ás   copas     1
-## 51   dama espadas    12
-## 31  cinco    paus     5
-## 15   dois   copas     2
-## 1      ás   ouros     1
-## 13    rei   ouros    13
-## 30 quatro    paus     4
-## 27     ás    paus     1
-## 35   nove    paus     9
-## 17 quatro   copas     4
-## 26    rei   copas    13
-## 22   nove   copas     9
-## 25   dama   copas    12
-## 34   oito    paus     8
-## 42   três espadas     3
-## 32   seis    paus     6
-## 47   oito espadas     8
-## 46   sete espadas     7
-## 4  quatro   ouros     4
-## 3    três   ouros     3
-## 39    rei    paus    13
-## 11 valete   ouros    11
-## 21   oito   copas     8
-## 28   dois    paus     2
-## 9    nove   ouros     9
-## 16   três   copas     3
-## 23    dez   copas    10
-## 33   sete    paus     7
-## 36    dez    paus    10
-## 24 valete   copas    11
-## 29   três    paus     3
-## 38   dama    paus    12
-## 10    dez   ouros    10
-## 18  cinco   copas     5
-## 5   cinco   ouros     5
-## 20   sete   copas     7
+## 45   seis espadas     6
+## 49    dez espadas    10
 ## 40     ás espadas     1
-## 12   dama   ouros    12
 ## 52    rei espadas    13
 ## 44  cinco espadas     5
-## 45   seis espadas     6
-## 6    seis   ouros     6
-## 41   dois espadas     2
-## 43 quatro espadas     4
+## 38   dama    paus    12
+## 10    dez   ouros    10
+## 31  cinco    paus     5
+## 39    rei    paus    13
+## 3    três   ouros     3
+## 13    rei   ouros    13
+## 25   dama   copas    12
+## 33   sete    paus     7
+## 32   seis    paus     6
+## 24 valete   copas    11
+## 9    nove   ouros     9
+## 27     ás    paus     1
+## 36    dez    paus    10
+## 4  quatro   ouros     4
+## 15   dois   copas     2
+## 26    rei   copas    13
+## 5   cinco   ouros     5
+## 30 quatro    paus     4
+## 18  cinco   copas     5
+## 2    dois   ouros     2
 ## 50 valete espadas    11
+## 23    dez   copas    10
+## 29   três    paus     3
+## 12   dama   ouros    12
+## 1      ás   ouros     1
+## 6    seis   ouros     6
+## 11 valete   ouros    11
 ## 37 valete    paus    11
-## 49    dez espadas    10
+## 22   nove   copas     9
+## 20   sete   copas     7
+## 34   oito    paus     8
+## 28   dois    paus     2
 ## 7    sete   ouros     7
+## 19   seis   copas     6
+## 42   três espadas     3
+## 16   três   copas     3
+## 14     ás   copas     1
+## 35   nove    paus     9
+## 43 quatro espadas     4
+## 46   sete espadas     7
+## 21   oito   copas     8
+## 51   dama espadas    12
+## 47   oito espadas     8
+## 8    oito   ouros     8
+## 48   nove espadas     9
+## 41   dois espadas     2
+## 17 quatro   copas     4
 ```
 

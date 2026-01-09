@@ -28,7 +28,7 @@ dado * dado
 ```{r}
 round(3.1415)
 round(3.1415, 2)
-?round
+#?round
 mean(dado)
 round(mean(dado))
 ```
@@ -37,7 +37,7 @@ round(mean(dado))
 sample(x = dado, size = 2)
 sample(dado, 2)
 sample(x=dado, size=2, replace=TRUE)
-?sample
+#?sample
 args(sample)
 ```
 

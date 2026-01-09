@@ -1,40 +1,24 @@
 
 ``` r
-u <- "https://github.com/eogasawara/R/raw/main/baralho.rda"
+u <- "https://raw.githubusercontent.com/eogasawara/tutorial-r/main/examples/baralho.rda"
 load(url(u))
-```
-
-```
-## Warning in load(url(u)): cannot open URL 'https://github.com/eogasawara/R/raw/main/baralho.rda': HTTP status was '404 Not Found'
-```
-
-```
-## Error in load(url(u)): cannot open the connection to 'https://github.com/eogasawara/R/raw/main/baralho.rda'
-```
-
-``` r
 head(baralho)
 ```
 
 ```
-## Error: objeto 'baralho' não encontrado
+##     face naipe
+## 1     ás ouros
+## 2   dois ouros
+## 3   três ouros
+## 4 quatro ouros
+## 5  cinco ouros
+## 6   seis ouros
 ```
 
 
 ``` r
 save(baralho, file="baralho.rda")
-```
-
-```
-## Error in save(baralho, file = "baralho.rda"): objeto 'baralho' não encontrado
-```
-
-``` r
 rm(baralho)
-```
-
-```
-## Warning in rm(baralho): objeto 'baralho' não encontrado
 ```
 
 
@@ -236,7 +220,8 @@ c(NA, 1:50)
 ```
 
 ```
-##  [1] NA  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
+##  [1] NA  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
+## [41] 40 41 42 43 44 45 46 47 48 49 50
 ```
 
 ``` r
@@ -263,7 +248,7 @@ baralho[filtro, ]
 
 ```
 ## [1] face  naipe idx  
-## <0 linhas> (ou row.names de comprimento 0)
+## <0 rows> (or 0-length row.names)
 ```
 
 ``` r
@@ -272,7 +257,7 @@ baralho[baralho$valor < 3,]
 
 ```
 ## [1] face  naipe idx  
-## <0 linhas> (ou row.names de comprimento 0)
+## <0 rows> (or 0-length row.names)
 ```
 
 
@@ -282,8 +267,8 @@ ordem
 ```
 
 ```
-##  [1] 25 44 11 40 24 47 30 38 48 35 20 15 52 33  1 36 50 27 45 32  4 31  6 29 34 21  2 18 16 12 41 49  3 23  7  9 46 10 13 22  5 17 37 26 19 51 42  8 28 14 39
-## [52] 43
+##  [1] 46 38 19 17  8 39  6 33 13 11 50  1  4  3 45 43 37 25 30 18 12  9  2 52 29 40 51 16 20  7 35 23 27 26 10 28 31 34 42 21
+## [41] 22 44 41 47 32  5 24 36 14 15 48 49
 ```
 
 ``` r
@@ -293,58 +278,58 @@ cartas
 
 ```
 ##      face   naipe idx
-## 25   dama   copas  25
-## 44  cinco espadas  44
-## 11 valete   ouros  11
-## 40     ás espadas  40
-## 24 valete   copas  24
-## 47   oito espadas  47
-## 30 quatro    paus  30
-## 38   dama    paus  38
-## 48   nove espadas  48
-## 35   nove    paus  35
-## 20   sete   copas  20
-## 15   dois   copas  15
-## 52    rei espadas  52
-## 33   sete    paus  33
-## 1      ás   ouros   1
-## 36    dez    paus  36
-## 50 valete espadas  50
-## 27     ás    paus  27
-## 45   seis espadas  45
-## 32   seis    paus  32
-## 4  quatro   ouros   4
-## 31  cinco    paus  31
-## 6    seis   ouros   6
-## 29   três    paus  29
-## 34   oito    paus  34
-## 21   oito   copas  21
-## 2    dois   ouros   2
-## 18  cinco   copas  18
-## 16   três   copas  16
-## 12   dama   ouros  12
-## 41   dois espadas  41
-## 49    dez espadas  49
-## 3    três   ouros   3
-## 23    dez   copas  23
-## 7    sete   ouros   7
-## 9    nove   ouros   9
 ## 46   sete espadas  46
-## 10    dez   ouros  10
-## 13    rei   ouros  13
-## 22   nove   copas  22
-## 5   cinco   ouros   5
-## 17 quatro   copas  17
-## 37 valete    paus  37
-## 26    rei   copas  26
+## 38   dama    paus  38
 ## 19   seis   copas  19
-## 51   dama espadas  51
-## 42   três espadas  42
+## 17 quatro   copas  17
 ## 8    oito   ouros   8
-## 28   dois    paus  28
-## 14     ás   copas  14
 ## 39    rei    paus  39
+## 6    seis   ouros   6
+## 33   sete    paus  33
+## 13    rei   ouros  13
+## 11 valete   ouros  11
+## 50 valete espadas  50
+## 1      ás   ouros   1
+## 4  quatro   ouros   4
+## 3    três   ouros   3
+## 45   seis espadas  45
 ## 43 quatro espadas  43
+## 37 valete    paus  37
+## 25   dama   copas  25
+## 30 quatro    paus  30
+## 18  cinco   copas  18
+## 12   dama   ouros  12
+## 9    nove   ouros   9
+## 2    dois   ouros   2
+## 52    rei espadas  52
+## 29   três    paus  29
+## 40     ás espadas  40
+## 51   dama espadas  51
+## 16   três   copas  16
+## 20   sete   copas  20
+## 7    sete   ouros   7
+## 35   nove    paus  35
+## 23    dez   copas  23
+## 27     ás    paus  27
+## 26    rei   copas  26
+## 10    dez   ouros  10
+## 28   dois    paus  28
+## 31  cinco    paus  31
+## 34   oito    paus  34
+## 42   três espadas  42
+## 21   oito   copas  21
+## 22   nove   copas  22
+## 44  cinco espadas  44
+## 41   dois espadas  41
+## 47   oito espadas  47
+## 32   seis    paus  32
+## 5   cinco   ouros   5
+## 24 valete   copas  24
+## 36    dez    paus  36
+## 14     ás   copas  14
+## 15   dois   copas  15
+## 48   nove espadas  48
+## 49    dez espadas  49
 ```
 
 
@@ -359,57 +344,57 @@ cartas
 
 ```
 ##      face   naipe idx
-## 33   sete    paus  33
-## 11 valete   ouros  11
-## 9    nove   ouros   9
-## 29   três    paus  29
-## 2    dois   ouros   2
-## 10    dez   ouros  10
-## 32   seis    paus  32
-## 12   dama   ouros  12
-## 17 quatro   copas  17
-## 38   dama    paus  38
-## 13    rei   ouros  13
-## 48   nove espadas  48
-## 23    dez   copas  23
-## 8    oito   ouros   8
-## 43 quatro espadas  43
-## 19   seis   copas  19
-## 42   três espadas  42
-## 36    dez    paus  36
-## 1      ás   ouros   1
 ## 45   seis espadas  45
+## 8    oito   ouros   8
 ## 5   cinco   ouros   5
 ## 6    seis   ouros   6
-## 16   três   copas  16
-## 3    três   ouros   3
-## 25   dama   copas  25
-## 7    sete   ouros   7
-## 30 quatro    paus  30
-## 51   dama espadas  51
-## 14     ás   copas  14
-## 24 valete   copas  24
-## 40     ás espadas  40
-## 41   dois espadas  41
-## 39    rei    paus  39
-## 28   dois    paus  28
-## 34   oito    paus  34
+## 10    dez   ouros  10
 ## 26    rei   copas  26
-## 47   oito espadas  47
+## 34   oito    paus  34
+## 28   dois    paus  28
 ## 4  quatro   ouros   4
-## 49    dez espadas  49
-## 50 valete espadas  50
-## 35   nove    paus  35
+## 9    nove   ouros   9
+## 1      ás   ouros   1
+## 27     ás    paus  27
+## 12   dama   ouros  12
 ## 37 valete    paus  37
-## 46   sete espadas  46
-## 52    rei espadas  52
+## 11 valete   ouros  11
 ## 44  cinco espadas  44
-## 20   sete   copas  20
-## 21   oito   copas  21
+## 49    dez espadas  49
+## 25   dama   copas  25
+## 43 quatro espadas  43
+## 47   oito espadas  47
+## 35   nove    paus  35
+## 30 quatro    paus  30
+## 36    dez    paus  36
+## 23    dez   copas  23
+## 14     ás   copas  14
+## 15   dois   copas  15
+## 33   sete    paus  33
+## 2    dois   ouros   2
+## 48   nove espadas  48
+## 17 quatro   copas  17
+## 40     ás espadas  40
+## 39    rei    paus  39
+## 16   três   copas  16
+## 32   seis    paus  32
+## 19   seis   copas  19
+## 51   dama espadas  51
+## 24 valete   copas  24
+## 52    rei espadas  52
+## 42   três espadas  42
+## 3    três   ouros   3
+## 29   três    paus  29
+## 38   dama    paus  38
+## 7    sete   ouros   7
+## 13    rei   ouros  13
+## 46   sete espadas  46
+## 50 valete espadas  50
 ## 22   nove   copas  22
 ## 18  cinco   copas  18
+## 21   oito   copas  21
+## 41   dois espadas  41
+## 20   sete   copas  20
 ## 31  cinco    paus  31
-## 27     ás    paus  27
-## 15   dois   copas  15
 ```
 

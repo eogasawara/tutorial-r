@@ -1,10 +1,7 @@
 ```{r}
 #funções gráficas qplot
-?qplot
 
 library(ggplot2)
-
-?qplot
 
 # deixei a instalação comentada, mas para rodar tire o comentário ...
 #install.packages("ggplot2")
@@ -48,7 +45,7 @@ mean(simulacao_completa)
 ```
 
 ```{r}
-?sqrt
+#?sqrt
 ```
 
 ```{r}
@@ -61,7 +58,7 @@ lines(spline(xx, sqrt(abs(xx)), n=101), col = "pink")
 ```
 
 ```{r}
-?sample
+#?sample
 ```
 
 ```{r}
