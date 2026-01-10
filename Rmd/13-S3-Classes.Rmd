@@ -1,4 +1,5 @@
 ```{r}
+# Construtor para um poligono simples
 polygon <- function(n) {
   if (n <= 0) stop("numero de vertices deve ser maior que zero")
   obj <- list(n = n)
@@ -8,6 +9,7 @@ polygon <- function(n) {
 ```
 
 ```{r}
+# Construtor para retangulo como subclasse de polygon
 rectangle <- function(w, h) {
   obj <- polygon(4)
   obj$w <- w
@@ -18,6 +20,7 @@ rectangle <- function(w, h) {
 ```
 
 ```{r}
+# Metodos print para as classes S3
 print.polygon <- function(obj) {
   cat(obj$n, "\n")
 }
@@ -28,6 +31,7 @@ print.rectangle <- function(obj) {
 ```
 
 ```{r}
+# Generic e metodos para area
 area <- function(obj) {
   UseMethod("area")
 }
@@ -42,10 +46,12 @@ area.rectangle <- function(obj) {
 ```
 
 ```{r}
+# Listando metodos disponiveis
 methods(class = "default")
 ```
 
 ```{r}
+# Instanciando objetos e chamando metodos
 a <- 3
 p <- polygon(5)
 r <- rectangle(3, 10)
