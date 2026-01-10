@@ -1,5 +1,6 @@
 
 ``` r
+# Operacoes basicas no console
 1 + 2
 ```
 
@@ -8,6 +9,7 @@
 ```
 
 ``` r
+# Sequencia de inteiros
 1:10
 ```
 
@@ -16,6 +18,7 @@
 ```
 
 ``` r
+# Criando e usando uma variavel
 a <- 1
 a
 ```
@@ -33,6 +36,7 @@ a + 2
 ```
 
 ``` r
+# Vetor e indexacao
 dado <- 1:6
 dado
 ```
@@ -58,6 +62,7 @@ dado[6]
 ```
 
 ``` r
+# Operacao vetorizada
 dado - 1
 ```
 
@@ -67,7 +72,8 @@ dado - 1
 
 
 ``` r
-  3 + 2
+# Operacoes aritmeticas basicas
+3 + 2
 ```
 
 ```
@@ -75,7 +81,7 @@ dado - 1
 ```
 
 ``` r
-  3 ^ 2
+3 ^ 2
 ```
 
 ```
@@ -83,7 +89,7 @@ dado - 1
 ```
 
 ``` r
-  3 / 2
+3 / 2
 ```
 
 ```
@@ -91,7 +97,7 @@ dado - 1
 ```
 
 ``` r
-  3 %% 2
+3 %% 2
 ```
 
 ```
@@ -100,7 +106,7 @@ dado - 1
 
 
 ``` r
-#slide 11
+# Multiplicacao escalar e elemento a elemento
 dado <- 1:6
 2 * dado
 ```
@@ -119,6 +125,7 @@ dado * dado
 
 
 ``` r
+# Arredondamento e media
 round(3.1415)
 ```
 
@@ -153,6 +160,7 @@ round(mean(dado))
 
 
 ``` r
+# Amostragem sem e com reposicao
 sample(x = dado, size = 2)
 ```
 
@@ -178,6 +186,7 @@ sample(x=dado, size=2, replace=TRUE)
 
 ``` r
 #?sample
+# Consultando argumentos da funcao
 args(sample)
 ```
 
@@ -188,6 +197,7 @@ args(sample)
 
 
 ``` r
+# Fixando semente para reproducibilidade
 set.seed(1)
 sample(x=dado, size=2, replace=TRUE)
 ```

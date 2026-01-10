@@ -1,5 +1,6 @@
 
 ``` r
+# Criando um vetor numerico e verificando seu tipo
 dado <- c(1, 2, 3, 4, 5, 6)
 dado
 ```
@@ -18,6 +19,7 @@ is.vector(dado)
 
 
 ``` r
+# Escalar numerico e tamanho dos objetos
 numero <- 5
 numero
 ```
@@ -52,9 +54,9 @@ length(dado)
 
 
 ``` r
+# Tipos basicos: inteiro e texto
 inteiro <- 1L
-texto <- "ás"
-
+texto <- "坟"
 typeof(inteiro)
 ```
 
@@ -72,11 +74,11 @@ typeof(texto)
 
 
 ``` r
+# Sequencia de cartas e operacoes com inteiros e texto
 cartas <- 1L:13L
-faces <- c("ás", "dois", "três", "quatro",
+faces <- c("坟", "dois", "trì", "quatro",
           "cinco", "seis", "sete", "oito",
           "nove", "dez", "valete", "dama", "rei")
-
 n <- sum(cartas)
 is.integer(n)
 ```
@@ -91,11 +93,12 @@ m
 ```
 
 ```
-## [1] "valete"
+## [1] "坟"
 ```
 
 
 ``` r
+# Tipo de um vetor numerico
 dado <- c(1, 2, 3, 4, 5, 6)
 dado
 ```
@@ -114,6 +117,7 @@ typeof(dado)
 
 
 ``` r
+# Logicos a partir de comparacoes
 3 > 4
 ```
 
@@ -143,6 +147,7 @@ typeof(logico)
 
 
 ``` r
+# Numeros complexos
 comp <- c(1 + 1i, 1 + 2i, 1 + 3i)
 comp
 ```
@@ -161,6 +166,7 @@ typeof(comp)
 
 
 ``` r
+# Tipo raw (bytes)
 r <- raw(3)
 typeof(r)
 ```
@@ -175,7 +181,8 @@ r[3] <- as.raw(1024)
 ```
 
 ```
-## Warning: out-of-range values treated as 0 in coercion to raw
+## Warning: out-of-range values treated as 0 in coercion to
+## raw
 ```
 
 ``` r
@@ -188,6 +195,7 @@ r
 
 
 ``` r
+# Atributos e nomes de um vetor
 dado <- c(1,2,3,4,5,6)
 attributes(dado)
 ```
@@ -197,18 +205,19 @@ attributes(dado)
 ```
 
 ``` r
-names(dado) <- c("um", "dois", "três", 
+names(dado) <- c("um", "dois", "trì", 
                  'quatro', 'cinco', 'seis')
 attributes(dado)
 ```
 
 ```
 ## $names
-## [1] "um"     "dois"   "três"   "quatro" "cinco"  "seis"
+## [1] "um"     "dois"   "trì"    "quatro" "cinco"  "seis"
 ```
 
 
 ``` r
+# Removendo nomes
 names(dado) <- NULL
 dado
 ```
@@ -219,6 +228,7 @@ dado
 
 
 ``` r
+# Atributo dim para transformar em matriz
 dado <- 1:6
 dim(dado) <- c(2, 3)
 dado
@@ -241,6 +251,7 @@ attributes(dado)
 
 
 ``` r
+# Criando matrizes com matrix()
 m <- matrix(dado, nrow = 2)
 m
 ```
@@ -264,6 +275,7 @@ n
 
 
 ``` r
+# Diferenca entre typeof, class e attributes
 typeof(dado)
 ```
 
@@ -290,12 +302,13 @@ attributes(dado)
 
 
 ``` r
+# Objetos de data e hora
 now <- Sys.time()
 now
 ```
 
 ```
-## [1] "2026-01-08 23:42:12 -03"
+## [1] "2026-01-10 12:33:06 -03"
 ```
 
 ``` r
@@ -316,9 +329,9 @@ class(now)
 
 
 ``` r
+# Fatores e seus atributos
 genero <- factor(c("feminino", "masculino", 
                    "feminino", "masculino"))
-
 typeof(genero)
 ```
 
@@ -340,6 +353,7 @@ attributes(genero)
 
 
 ``` r
+# Convertendo fator para outros tipos
 unclass(genero)
 ```
 
@@ -351,7 +365,6 @@ unclass(genero)
 
 ``` r
 n <- unclass(genero)
-
 as.integer(genero)
 ```
 
@@ -369,6 +382,7 @@ as.character(genero)
 
 
 ``` r
+# Coercao entre tipos basicos
 sum(c(TRUE, TRUE, FALSE, FALSE))
 ```
 
@@ -410,8 +424,9 @@ as.numeric(FALSE)
 
 
 ``` r
+# Criando um data frame simples
 df <- data.frame(
-    face = c("ás", "dois", "quatro"),  
+    face = c("坟", "dois", "quatro"),  
     naipe = c("ouros", "copas", "paus"), 
     valor = c(1, 2, 4))
 df
@@ -419,16 +434,15 @@ df
 
 ```
 ##     face naipe valor
-## 1     ás ouros     1
+## 1     坟 ouros     1
 ## 2   dois copas     2
 ## 3 quatro  paus     4
 ```
 
 
 ``` r
+# Salvando e lendo dados em CSV
 write.csv(df, file = "cartas.csv", 
           row.names = FALSE, quote=FALSE)
-
 cartas <- read.csv("cartas.csv")
 ```
-

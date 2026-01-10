@@ -1,5 +1,6 @@
 
 ``` r
+# Exemplo simples com variaveis escalares
 weight <- 60
 height = 1.75
 subject <- "A"
@@ -14,6 +15,7 @@ bmi
 
 
 ``` r
+# Vetores para calcular IMC em lote
 weight <- c(60, 72, 57, 90, 95, 72) 
 height <- c(1.75, 1.80, 1.65, 1.90, 1.74, 1.91)
 subject <- c("A", "B", "C", "D", "E", "F")
@@ -21,6 +23,7 @@ subject <- c("A", "B", "C", "D", "E", "F")
 
 
 ``` r
+# Loop for para calcular IMC
 bmi <- 0
 for (i in 1:length(weight)) {
   bmi[i] <- weight[i]/height[i]^2
@@ -34,6 +37,7 @@ bmi
 
 
 ``` r
+# Loop for com exibicao parcial
 bmi <- 0
 for (i in 1:length(weight)) {
   bmi[i] <- weight[i]/height[i]^2
@@ -60,6 +64,7 @@ bmi
 
 
 ``` r
+# Limpando e testando existencia de objeto
 rm(bmi)
 exists("bmi")
 ```
@@ -70,6 +75,7 @@ exists("bmi")
 
 
 ``` r
+# Loop while para o mesmo calculo
 i <- 1
 bmi <- 0
 while (i <= length(weight)) {
@@ -80,6 +86,7 @@ while (i <= length(weight)) {
 
 
 ``` r
+# Funcao com while interno
 compute_bmi <- function(weight, height) {
   i <- 1
   bmi <- 0
@@ -89,7 +96,6 @@ compute_bmi <- function(weight, height) {
   }
   return(bmi)
 } 
-
 bmi <- compute_bmi(weight, height)
 bmi
 ```
@@ -100,11 +106,11 @@ bmi
 
 
 ``` r
+# Versao vetorizada da funcao
 compute_bmi <- function(weight, height) {
   resposta <- weight/height^2
   return(resposta)
 } 
-
 bmi <- compute_bmi(weight, height)
 bmi
 ```
@@ -115,6 +121,7 @@ bmi
 
 
 ``` r
+# Chamadas da funcao com escalar e vetor
 compute_bmi(80, 1.79)
 ```
 
@@ -129,4 +136,3 @@ compute_bmi(weight, height)
 ```
 ## [1] 19.59184 22.22222 20.93664 24.93075 31.37799 19.73630
 ```
-

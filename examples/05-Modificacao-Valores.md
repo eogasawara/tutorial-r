@@ -1,5 +1,6 @@
 
 ``` r
+# Carregando um objeto .rda pela URL
 u <- "https://raw.githubusercontent.com/eogasawara/tutorial-r/main/examples/baralho.rda"
 load(url(u))
 head(baralho)
@@ -17,12 +18,14 @@ head(baralho)
 
 
 ``` r
+# Salvando e removendo o objeto do ambiente
 save(baralho, file="baralho.rda")
 rm(baralho)
 ```
 
 
 ``` r
+# Recarregando o arquivo salvo localmente
 load(file="baralho.rda")
 head(baralho)
 ```
@@ -39,6 +42,7 @@ head(baralho)
 
 
 ``` r
+# Criando uma coluna de indice
 baralho$idx <- 1:52
 head(baralho)
 ```
@@ -55,6 +59,7 @@ head(baralho)
 
 
 ``` r
+# Alterando valores pontuais na coluna
 baralho$idx[c(1,3,5)] <- 1
 head(baralho)
 ```
@@ -86,6 +91,7 @@ head(baralho)
 
 
 ``` r
+# Selecionando linhas com logica booleana
 baralho$idx <- 1:52
 vec <- (baralho$idx %% 2 == 1)
 idx <- baralho$idx[vec]
@@ -93,7 +99,8 @@ idx
 ```
 
 ```
-##  [1]  1  3  5  7  9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51
+##  [1]  1  3  5  7  9 11 13 15 17 19 21 23 25 27 29 31 33 35
+## [19] 37 39 41 43 45 47 49 51
 ```
 
 ``` r
@@ -133,6 +140,7 @@ cartas
 
 
 ``` r
+# Comparacoes e operador %in%
 1 > 2
 ```
 
@@ -174,6 +182,7 @@ c(1, 2, 3) %in% c(3, 4, 5)
 
 
 ``` r
+# Filtros compostos com AND e OR
 x <- baralho$face == "dama" & baralho$naipe == "espadas"
 head(baralho[x,])
 ```
@@ -200,6 +209,7 @@ head(baralho[x,])
 
 
 ``` r
+# Tratando valores ausentes (NA)
 1 + NA
 ```
 
@@ -220,8 +230,9 @@ c(NA, 1:50)
 ```
 
 ```
-##  [1] NA  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39
-## [41] 40 41 42 43 44 45 46 47 48 49 50
+##  [1] NA  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17
+## [19] 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+## [37] 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
 ```
 
 ``` r
@@ -242,6 +253,7 @@ mean(c(NA, 1:50), na.rm = TRUE)
 
 
 ``` r
+# Filtrando com condicao simples
 filtro <- baralho$valor < 3
 baralho[filtro, ]
 ```
@@ -262,13 +274,15 @@ baralho[baralho$valor < 3,]
 
 
 ``` r
+# Embaralhando as linhas
 ordem <- sample(1:nrow(baralho))
 ordem
 ```
 
 ```
-##  [1] 46 38 19 17  8 39  6 33 13 11 50  1  4  3 45 43 37 25 30 18 12  9  2 52 29 40 51 16 20  7 35 23 27 26 10 28 31 34 42 21
-## [41] 22 44 41 47 32  5 24 36 14 15 48 49
+##  [1] 46 38 19 17  8 39  6 33 13 11 50  1  4  3 45 43 37 25
+## [19] 30 18 12  9  2 52 29 40 51 16 20  7 35 23 27 26 10 28
+## [37] 31 34 42 21 22 44 41 47 32  5 24 36 14 15 48 49
 ```
 
 ``` r
@@ -334,6 +348,7 @@ cartas
 
 
 ``` r
+# Funcao para embaralhar o baralho
 embaralhar <- function(baralho) {
   ordem <- sample(1:nrow(baralho))
   return(baralho[ordem,])
@@ -397,4 +412,3 @@ cartas
 ## 20   sete   copas  20
 ## 31  cinco    paus  31
 ```
-

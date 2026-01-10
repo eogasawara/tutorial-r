@@ -1,15 +1,14 @@
 
 ``` r
-#funções gráficas qplot
-
+# Funcoes graficas com ggplot2
 library(ggplot2)
-
-# deixei a instalação comentada, mas para rodar tire o comentário ...
+# Instalacao do pacote (execute se necessario)
 #install.packages("ggplot2")
 ```
 
 
 ``` r
+# Sequencia de valores para o grafico
 x <- c(-1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1)
 x
 ```
@@ -19,23 +18,32 @@ x
 ```
 
 ``` r
+# Transformacao e visualizacao
 y <- x^3
 y
 ```
 
 ```
-##  [1] -1.000 -0.512 -0.216 -0.064 -0.008  0.000  0.008  0.064  0.216  0.512  1.000
+##  [1] -1.000 -0.512 -0.216 -0.064 -0.008  0.000  0.008  0.064
+##  [9]  0.216  0.512  1.000
 ```
 
 ``` r
 qplot(x, y)
 ```
 
+```
+## Warning: `qplot()` was deprecated in ggplot2 3.4.0.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_lifecycle_warnings()` to see where
+## this warning was generated.
+```
+
 ![plot of chunk unnamed-chunk-2](fig/02-Pacotes-Ajuda/unnamed-chunk-2-1.png)
 
 
 ``` r
-# criar uma função para jogada 
+# Simulacao simples de dois dados
 dado <- 1:6
 dados <- sample(dado, size = 2, replace = TRUE)
 sum(dados)
@@ -47,6 +55,7 @@ sum(dados)
 
 
 ``` r
+# Funcao que retorna a soma dos dados
 jogada <-  function() {
   dado <- 1:6
   dados <- sample(dado, size = 2, replace = TRUE)
@@ -56,6 +65,7 @@ jogada <-  function() {
 
 
 ``` r
+# Simulacao pequena para visualizar a distribuicao
 simulacao_minima <- replicate(30, jogada())
 qplot(simulacao_minima, binwidth =1)
 ```
@@ -72,6 +82,7 @@ mean(simulacao_minima)
 
 
 ``` r
+# Simulacao completa para estimar a media
 simulacao_completa <- replicate(10000, jogada())
 qplot(simulacao_completa, binwidth =1)
 ```
@@ -88,12 +99,13 @@ mean(simulacao_completa)
 
 
 ``` r
-#?sqrt
+# Ajuda da funcao sqrt
+?sqrt
 ```
 
 
 ``` r
-#slide 11
+# Exemplo de spline e grafico com sqrt
 require(stats) # for spline
 require(graphics)
 xx <- -9:9
@@ -105,11 +117,7 @@ lines(spline(xx, sqrt(abs(xx)), n=101), col = "pink")
 
 
 ``` r
-#?sample
-```
-
-
-``` r
+# Simulacao da soma de dois dados com probabilidades
 simulacao = replicate(10000, 
                       sample(2:12, 
                       replace=TRUE, 
@@ -118,11 +126,12 @@ qplot(simulacao, binwidth=1)
 ```
 
 ```
-## Warning in `[<-.data.frame`(`*tmp*`, , x_vars, value = list(x = c(4, 8, : replacement element 1 has 110000 rows to replace
-## 11 rows
+## Warning in `[<-.data.frame`(`*tmp*`, , x_vars, value =
+## list(x = c(4, 8, : replacement element 1 has 110000 rows to
+## replace 11 rows
 ```
 
-![plot of chunk unnamed-chunk-10](fig/02-Pacotes-Ajuda/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-9](fig/02-Pacotes-Ajuda/unnamed-chunk-9-1.png)
 
 ``` r
 mean(simulacao)
@@ -131,4 +140,3 @@ mean(simulacao)
 ```
 ## [1] 7.000027
 ```
-
