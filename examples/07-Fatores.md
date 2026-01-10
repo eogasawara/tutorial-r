@@ -22,13 +22,13 @@ fpain
 
 ``` r
 # Renomeando os niveis
-levels(fpain) <- c("sem","baixa","mＥia","alta")
+levels(fpain) <- c("sem","baixa","média","alta")
 fpain
 ```
 
 ```
-## [1] sem   alta  mＥia mＥia baixa
-## Levels: sem < baixa < mＥia < alta
+## [1] sem   alta  média média baixa
+## Levels: sem < baixa < média < alta
 ```
 
 
@@ -39,17 +39,17 @@ for (i in 1:length(height)) {
   if (height[i] < 1.7)
     lev[i] <- "baixa"
   else if (height[i] < 1.9)
-    lev[i] <- "mＥia"
+    lev[i] <- "média"
   else 
     lev[i] <- "alta"
 }
-lev <- factor(lev,levels=c("baixa", "mＥia", "alta"), ordered=TRUE)
+lev <- factor(lev,levels=c("baixa", "média", "alta"), ordered=TRUE)
 lev
 ```
 
 ```
-## [1] mＥia mＥia baixa alta  mＥia alta 
-## Levels: baixa < mＥia < alta
+## [1] média média baixa alta  média alta 
+## Levels: baixa < média < alta
 ```
 
 
@@ -65,11 +65,11 @@ lev
 ```
 
 ``` r
-levels(lev) <- c("baixa", "mＥia", "alta")
+levels(lev) <- c("baixa", "média", "alta")
 lev
 ```
 
 ```
-## [1] mＥia mＥia baixa mＥia mＥia alta 
-## Levels: baixa < mＥia < alta
+## [1] média média baixa média média alta 
+## Levels: baixa < média < alta
 ```

@@ -9,7 +9,7 @@ fpain <- factor(pain,levels=0:3, ordered=TRUE)
 fpain
 
 # Renomeando os niveis
-levels(fpain) <- c("sem","baixa","mＥia","alta")
+levels(fpain) <- c("sem","baixa","média","alta")
 fpain
 
 # Classificando alturas com if/else
@@ -18,15 +18,15 @@ for (i in 1:length(height)) {
   if (height[i] < 1.7)
     lev[i] <- "baixa"
   else if (height[i] < 1.9)
-    lev[i] <- "mＥia"
+    lev[i] <- "média"
   else 
     lev[i] <- "alta"
 }
-lev <- factor(lev,levels=c("baixa", "mＥia", "alta"), ordered=TRUE)
+lev <- factor(lev,levels=c("baixa", "média", "alta"), ordered=TRUE)
 lev
 
 # Usando cut para categorizar alturas
 lev <- cut(height, breaks=c(0, 1.7, 1.9, .Machine$double.xmax), ordered=TRUE)
 lev
-levels(lev) <- c("baixa", "mＥia", "alta")
+levels(lev) <- c("baixa", "média", "alta")
 lev
