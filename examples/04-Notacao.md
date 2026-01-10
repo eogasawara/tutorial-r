@@ -1,7 +1,7 @@
 
 ``` r
 # Montando o baralho com expand.grid
-faces <- c("坟", "dois", "trì", "quatro",
+faces <- c("ás", "dois", "trì", "quatro",
            "cinco", "seis", "sete", "oito",
            "nove", "dez", "valete", "dama", "rei")
 naipes = c("ouros", "copas", "paus", "espadas")
@@ -11,7 +11,7 @@ baralho
 
 ```
 ##      face   naipe
-## 1      坟   ouros
+## 1      ás   ouros
 ## 2    dois   ouros
 ## 3     trì   ouros
 ## 4  quatro   ouros
@@ -24,7 +24,7 @@ baralho
 ## 11 valete   ouros
 ## 12   dama   ouros
 ## 13    rei   ouros
-## 14     坟   copas
+## 14     ás   copas
 ## 15   dois   copas
 ## 16    trì   copas
 ## 17 quatro   copas
@@ -37,7 +37,7 @@ baralho
 ## 24 valete   copas
 ## 25   dama   copas
 ## 26    rei   copas
-## 27     坟    paus
+## 27     ás    paus
 ## 28   dois    paus
 ## 29    trì    paus
 ## 30 quatro    paus
@@ -50,7 +50,7 @@ baralho
 ## 37 valete    paus
 ## 38   dama    paus
 ## 39    rei    paus
-## 40     坟 espadas
+## 40     ás espadas
 ## 41   dois espadas
 ## 42    trì espadas
 ## 43 quatro espadas
@@ -74,7 +74,7 @@ baralho
 
 ```
 ##      face   naipe valor
-## 1      坟   ouros     1
+## 1      ás   ouros     1
 ## 2    dois   ouros     2
 ## 3     trì   ouros     3
 ## 4  quatro   ouros     4
@@ -87,7 +87,7 @@ baralho
 ## 11 valete   ouros    11
 ## 12   dama   ouros    12
 ## 13    rei   ouros    13
-## 14     坟   copas     1
+## 14     ás   copas     1
 ## 15   dois   copas     2
 ## 16    trì   copas     3
 ## 17 quatro   copas     4
@@ -100,7 +100,7 @@ baralho
 ## 24 valete   copas    11
 ## 25   dama   copas    12
 ## 26    rei   copas    13
-## 27     坟    paus     1
+## 27     ás    paus     1
 ## 28   dois    paus     2
 ## 29    trì    paus     3
 ## 30 quatro    paus     4
@@ -113,7 +113,7 @@ baralho
 ## 37 valete    paus    11
 ## 38   dama    paus    12
 ## 39    rei    paus    13
-## 40     坟 espadas     1
+## 40     ás espadas     1
 ## 41   dois espadas     2
 ## 42    trì espadas     3
 ## 43 quatro espadas     4
@@ -134,7 +134,7 @@ head(baralho)
 
 ```
 ##     face naipe valor
-## 1     坟 ouros     1
+## 1     ás ouros     1
 ## 2   dois ouros     2
 ## 3    trì ouros     3
 ## 4 quatro ouros     4
@@ -149,8 +149,8 @@ baralho[1, 1]
 ```
 
 ```
-## [1] 坟
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+## [1] ás
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -158,8 +158,8 @@ baralho[1, "face"]
 ```
 
 ```
-## [1] 坟
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+## [1] ás
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -167,8 +167,8 @@ baralho[c(1,2), 1]
 ```
 
 ```
-## [1] 坟   dois
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+## [1] ás   dois
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -176,14 +176,11 @@ baralho[ , 1]
 ```
 
 ```
-##  [1] 坟     dois   trì    quatro cinco  seis   sete   oito  
-##  [9] nove   dez    valete dama   rei    坟     dois   trì   
-## [17] quatro cinco  seis   sete   oito   nove   dez    valete
-## [25] dama   rei    坟     dois   trì    quatro cinco  seis  
-## [33] sete   oito   nove   dez    valete dama   rei    坟    
-## [41] dois   trì    quatro cinco  seis   sete   oito   nove  
-## [49] dez    valete dama   rei   
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+##  [1] ás     dois   trì    quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   trì    quatro
+## [18] cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   trì    quatro cinco  seis   sete   oito  
+## [35] nove   dez    valete dama   rei    ás     dois   trì    quatro cinco  seis   sete   oito   nove   dez    valete dama  
+## [52] rei   
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 
@@ -193,8 +190,8 @@ baralho[c(11,14), "face"]
 ```
 
 ```
-## [1] valete 坟    
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+## [1] valete ás    
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -202,8 +199,8 @@ baralho[c(11,14), 1]
 ```
 
 ```
-## [1] valete 坟    
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+## [1] valete ás    
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -211,8 +208,8 @@ baralho$face[c(11,14)]
 ```
 
 ```
-## [1] valete 坟    
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+## [1] valete ás    
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 
@@ -233,7 +230,7 @@ baralho[c(11,14), 1:2]
 ```
 ##      face naipe
 ## 11 valete ouros
-## 14     坟 copas
+## 14     ás copas
 ```
 
 ``` r
@@ -243,7 +240,7 @@ baralho[c(11,14), c("face", "naipe")]
 ```
 ##      face naipe
 ## 11 valete ouros
-## 14     坟 copas
+## 14     ás copas
 ```
 
 
@@ -255,7 +252,7 @@ baralho[c(11,14), "face", drop=FALSE]
 ```
 ##      face
 ## 11 valete
-## 14     坟
+## 14     ás
 ```
 
 ``` r
@@ -265,7 +262,7 @@ baralho[c(11,14), 1, drop=FALSE]
 ```
 ##      face
 ## 11 valete
-## 14     坟
+## 14     ás
 ```
 
 
@@ -275,9 +272,8 @@ baralho[c(1:13), 1]
 ```
 
 ```
-##  [1] 坟     dois   trì    quatro cinco  seis   sete   oito  
-##  [9] nove   dez    valete dama   rei   
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+##  [1] ás     dois   trì    quatro cinco  seis   sete   oito   nove   dez    valete dama   rei   
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -285,9 +281,8 @@ baralho[-c(14:52), 1]
 ```
 
 ```
-##  [1] 坟     dois   trì    quatro cinco  seis   sete   oito  
-##  [9] nove   dez    valete dama   rei   
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+##  [1] ás     dois   trì    quatro cinco  seis   sete   oito   nove   dez    valete dama   rei   
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 ``` r
@@ -309,7 +304,7 @@ baralho[ , ]
 
 ```
 ##      face   naipe valor
-## 1      坟   ouros     1
+## 1      ás   ouros     1
 ## 2    dois   ouros     2
 ## 3     trì   ouros     3
 ## 4  quatro   ouros     4
@@ -322,7 +317,7 @@ baralho[ , ]
 ## 11 valete   ouros    11
 ## 12   dama   ouros    12
 ## 13    rei   ouros    13
-## 14     坟   copas     1
+## 14     ás   copas     1
 ## 15   dois   copas     2
 ## 16    trì   copas     3
 ## 17 quatro   copas     4
@@ -335,7 +330,7 @@ baralho[ , ]
 ## 24 valete   copas    11
 ## 25   dama   copas    12
 ## 26    rei   copas    13
-## 27     坟    paus     1
+## 27     ás    paus     1
 ## 28   dois    paus     2
 ## 29    trì    paus     3
 ## 30 quatro    paus     4
@@ -348,7 +343,7 @@ baralho[ , ]
 ## 37 valete    paus    11
 ## 38   dama    paus    12
 ## 39    rei    paus    13
-## 40     坟 espadas     1
+## 40     ás espadas     1
 ## 41   dois espadas     2
 ## 42    trì espadas     3
 ## 43 quatro espadas     4
@@ -369,7 +364,7 @@ baralho[1, ]
 
 ```
 ##   face naipe valor
-## 1   坟 ouros     1
+## 1   ás ouros     1
 ```
 
 ``` r
@@ -377,14 +372,11 @@ baralho[ , 1]
 ```
 
 ```
-##  [1] 坟     dois   trì    quatro cinco  seis   sete   oito  
-##  [9] nove   dez    valete dama   rei    坟     dois   trì   
-## [17] quatro cinco  seis   sete   oito   nove   dez    valete
-## [25] dama   rei    坟     dois   trì    quatro cinco  seis  
-## [33] sete   oito   nove   dez    valete dama   rei    坟    
-## [41] dois   trì    quatro cinco  seis   sete   oito   nove  
-## [49] dez    valete dama   rei   
-## 13 Levels: 坟 dois trì quatro cinco seis sete oito ... rei
+##  [1] ás     dois   trì    quatro cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   trì    quatro
+## [18] cinco  seis   sete   oito   nove   dez    valete dama   rei    ás     dois   trì    quatro cinco  seis   sete   oito  
+## [35] nove   dez    valete dama   rei    ás     dois   trì    quatro cinco  seis   sete   oito   nove   dez    valete dama  
+## [52] rei   
+## Levels: ás dois trì quatro cinco seis sete oito nove dez valete dama rei
 ```
 
 
@@ -395,7 +387,7 @@ baralho[1, c(TRUE, TRUE, FALSE)]
 
 ```
 ##   face naipe
-## 1   坟 ouros
+## 1   ás ouros
 ```
 
 
@@ -407,13 +399,13 @@ baralho[filtro, ]
 
 ```
 ##    face   naipe valor
-## 1    坟   ouros     1
+## 1    ás   ouros     1
 ## 2  dois   ouros     2
-## 14   坟   copas     1
+## 14   ás   copas     1
 ## 15 dois   copas     2
-## 27   坟    paus     1
+## 27   ás    paus     1
 ## 28 dois    paus     2
-## 40   坟 espadas     1
+## 40   ás espadas     1
 ## 41 dois espadas     2
 ```
 
@@ -423,13 +415,13 @@ baralho[baralho$valor < 3,]
 
 ```
 ##    face   naipe valor
-## 1    坟   ouros     1
+## 1    ás   ouros     1
 ## 2  dois   ouros     2
-## 14   坟   copas     1
+## 14   ás   copas     1
 ## 15 dois   copas     2
-## 27   坟    paus     1
+## 27   ás    paus     1
 ## 28 dois    paus     2
-## 40   坟 espadas     1
+## 40   ás espadas     1
 ## 41 dois espadas     2
 ```
 
@@ -441,9 +433,8 @@ ordem
 ```
 
 ```
-##  [1] 52 15 17  7  1 11  6 51  4  9 22 24 28 41 37  3  2 27
-## [19] 34 29 10 21 13 47 49 18 31 16  5 14 48 35 26 44 32 38
-## [37] 25 40 30 23 33 36 12 45 43 20 50 19 42 46  8 39
+##  [1] 52 15 17  7  1 11  6 51  4  9 22 24 28 41 37  3  2 27 34 29 10 21 13 47 49 18 31 16  5 14 48 35 26 44 32 38 25 40 30 23 33
+## [42] 36 12 45 43 20 50 19 42 46  8 39
 ```
 
 ``` r
@@ -457,7 +448,7 @@ cartas
 ## 15   dois   copas     2
 ## 17 quatro   copas     4
 ## 7    sete   ouros     7
-## 1      坟   ouros     1
+## 1      ás   ouros     1
 ## 11 valete   ouros    11
 ## 6    seis   ouros     6
 ## 51   dama espadas    12
@@ -470,7 +461,7 @@ cartas
 ## 37 valete    paus    11
 ## 3     trì   ouros     3
 ## 2    dois   ouros     2
-## 27     坟    paus     1
+## 27     ás    paus     1
 ## 34   oito    paus     8
 ## 29    trì    paus     3
 ## 10    dez   ouros    10
@@ -482,7 +473,7 @@ cartas
 ## 31  cinco    paus     5
 ## 16    trì   copas     3
 ## 5   cinco   ouros     5
-## 14     坟   copas     1
+## 14     ás   copas     1
 ## 48   nove espadas     9
 ## 35   nove    paus     9
 ## 26    rei   copas    13
@@ -490,7 +481,7 @@ cartas
 ## 32   seis    paus     6
 ## 38   dama    paus    12
 ## 25   dama   copas    12
-## 40     坟 espadas     1
+## 40     ás espadas     1
 ## 30 quatro    paus     4
 ## 23    dez   copas    10
 ## 33   sete    paus     7
@@ -522,7 +513,7 @@ cartas
 ##      face   naipe valor
 ## 45   seis espadas     6
 ## 49    dez espadas    10
-## 40     坟 espadas     1
+## 40     ás espadas     1
 ## 52    rei espadas    13
 ## 44  cinco espadas     5
 ## 38   dama    paus    12
@@ -536,7 +527,7 @@ cartas
 ## 32   seis    paus     6
 ## 24 valete   copas    11
 ## 9    nove   ouros     9
-## 27     坟    paus     1
+## 27     ás    paus     1
 ## 36    dez    paus    10
 ## 4  quatro   ouros     4
 ## 15   dois   copas     2
@@ -549,7 +540,7 @@ cartas
 ## 23    dez   copas    10
 ## 29    trì    paus     3
 ## 12   dama   ouros    12
-## 1      坟   ouros     1
+## 1      ás   ouros     1
 ## 6    seis   ouros     6
 ## 11 valete   ouros    11
 ## 37 valete    paus    11
@@ -561,7 +552,7 @@ cartas
 ## 19   seis   copas     6
 ## 42    trì espadas     3
 ## 16    trì   copas     3
-## 14     坟   copas     1
+## 14     ás   copas     1
 ## 35   nove    paus     9
 ## 43 quatro espadas     4
 ## 46   sete espadas     7

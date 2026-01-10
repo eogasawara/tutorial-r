@@ -56,7 +56,7 @@ length(dado)
 ``` r
 # Tipos basicos: inteiro e texto
 inteiro <- 1L
-texto <- "坟"
+texto <- "ás"
 typeof(inteiro)
 ```
 
@@ -76,7 +76,7 @@ typeof(texto)
 ``` r
 # Sequencia de cartas e operacoes com inteiros e texto
 cartas <- 1L:13L
-faces <- c("坟", "dois", "trì", "quatro",
+faces <- c("ás", "dois", "três", "quatro",
           "cinco", "seis", "sete", "oito",
           "nove", "dez", "valete", "dama", "rei")
 n <- sum(cartas)
@@ -93,7 +93,7 @@ m
 ```
 
 ```
-## [1] "坟"
+## [1] "valete"
 ```
 
 
@@ -181,8 +181,7 @@ r[3] <- as.raw(1024)
 ```
 
 ```
-## Warning: out-of-range values treated as 0 in coercion to
-## raw
+## Warning: out-of-range values treated as 0 in coercion to raw
 ```
 
 ``` r
@@ -205,14 +204,14 @@ attributes(dado)
 ```
 
 ``` r
-names(dado) <- c("um", "dois", "trì", 
+names(dado) <- c("ás", "dois", "três", 
                  'quatro', 'cinco', 'seis')
 attributes(dado)
 ```
 
 ```
 ## $names
-## [1] "um"     "dois"   "trì"    "quatro" "cinco"  "seis"
+## [1] "ás"     "dois"   "três"   "quatro" "cinco"  "seis"
 ```
 
 
@@ -308,7 +307,7 @@ now
 ```
 
 ```
-## [1] "2026-01-10 12:33:06 -03"
+## [1] "2026-01-10 12:46:54 -03"
 ```
 
 ``` r
@@ -426,7 +425,7 @@ as.numeric(FALSE)
 ``` r
 # Criando um data frame simples
 df <- data.frame(
-    face = c("坟", "dois", "quatro"),  
+    face = c("ás", "dois", "quatro"),  
     naipe = c("ouros", "copas", "paus"), 
     valor = c(1, 2, 4))
 df
@@ -434,7 +433,7 @@ df
 
 ```
 ##     face naipe valor
-## 1     坟 ouros     1
+## 1     ás ouros     1
 ## 2   dois copas     2
 ## 3 quatro  paus     4
 ```

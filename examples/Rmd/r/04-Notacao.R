@@ -1,5 +1,5 @@
 # Montando o baralho com expand.grid
-faces <- c("坟", "dois", "trì", "quatro",
+faces <- c("ás", "dois", "trì", "quatro",
            "cinco", "seis", "sete", "oito",
            "nove", "dez", "valete", "dama", "rei")
 naipes = c("ouros", "copas", "paus", "espadas")

@@ -24,19 +24,11 @@ y
 ```
 
 ```
-##  [1] -1.000 -0.512 -0.216 -0.064 -0.008  0.000  0.008  0.064
-##  [9]  0.216  0.512  1.000
+##  [1] -1.000 -0.512 -0.216 -0.064 -0.008  0.000  0.008  0.064  0.216  0.512  1.000
 ```
 
 ``` r
 qplot(x, y)
-```
-
-```
-## Warning: `qplot()` was deprecated in ggplot2 3.4.0.
-## This warning is displayed once every 8 hours.
-## Call `lifecycle::last_lifecycle_warnings()` to see where
-## this warning was generated.
 ```
 
 ![plot of chunk unnamed-chunk-2](fig/02-Pacotes-Ajuda/unnamed-chunk-2-1.png)
@@ -126,9 +118,8 @@ qplot(simulacao, binwidth=1)
 ```
 
 ```
-## Warning in `[<-.data.frame`(`*tmp*`, , x_vars, value =
-## list(x = c(4, 8, : replacement element 1 has 110000 rows to
-## replace 11 rows
+## Warning in `[<-.data.frame`(`*tmp*`, , x_vars, value = list(x = c(4, 8, : replacement element 1 has 110000 rows to replace 11
+## rows
 ```
 
 ![plot of chunk unnamed-chunk-9](fig/02-Pacotes-Ajuda/unnamed-chunk-9-1.png)

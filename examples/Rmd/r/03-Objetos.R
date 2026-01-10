@@ -12,13 +12,13 @@ length(dado)
 
 # Tipos basicos: inteiro e texto
 inteiro <- 1L
-texto <- "坟"
+texto <- "ás"
 typeof(inteiro)
 typeof(texto)
 
 # Sequencia de cartas e operacoes com inteiros e texto
 cartas <- 1L:13L
-faces <- c("坟", "dois", "trì", "quatro",
+faces <- c("ás", "dois", "três", "quatro",
           "cinco", "seis", "sete", "oito",
           "nove", "dez", "valete", "dama", "rei")
 n <- sum(cartas)
@@ -55,7 +55,7 @@ r
 # Atributos e nomes de um vetor
 dado <- c(1,2,3,4,5,6)
 attributes(dado)
-names(dado) <- c("um", "dois", "trì", 
+names(dado) <- c("ás", "dois", "três", 
                  'quatro', 'cinco', 'seis')
 attributes(dado)
 
@@ -107,7 +107,7 @@ as.numeric(FALSE)
 
 # Criando um data frame simples
 df <- data.frame(
-    face = c("坟", "dois", "quatro"),  
+    face = c("ás", "dois", "quatro"),  
     naipe = c("ouros", "copas", "paus"), 
     valor = c(1, 2, 4))
 df
