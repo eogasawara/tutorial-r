@@ -1,0 +1,52 @@
+# Funcoes graficas com ggplot2
+library(ggplot2)
+# Instalacao do pacote (execute se necessario)
+#install.packages("ggplot2")
+
+# Sequencia de valores para o grafico
+x <- c(-1, -0.8, -0.6, -0.4, -0.2, 0, 0.2, 0.4, 0.6, 0.8, 1)
+x
+# Transformacao e visualizacao
+y <- x^3
+y
+qplot(x, y)
+
+# Simulacao simples de dois dados
+dado <- 1:6
+dados <- sample(dado, size = 2, replace = TRUE)
+sum(dados)
+
+# Funcao que retorna a soma dos dados
+jogada <-  function() {
+  dado <- 1:6
+  dados <- sample(dado, size = 2, replace = TRUE)
+  return(sum(dados))
+}
+
+# Simulacao pequena para visualizar a distribuicao
+simulacao_minima <- replicate(30, jogada())
+qplot(simulacao_minima, binwidth =1)
+mean(simulacao_minima)
+
+# Simulacao completa para estimar a media
+simulacao_completa <- replicate(10000, jogada())
+qplot(simulacao_completa, binwidth =1)
+mean(simulacao_completa)
+
+# Ajuda da funcao sqrt
+?sqrt
+
+# Exemplo de spline e grafico com sqrt
+require(stats) # for spline
+require(graphics)
+xx <- -9:9
+plot(xx, sqrt(abs(xx)),  col = "red")
+lines(spline(xx, sqrt(abs(xx)), n=101), col = "pink")
+
+# Simulacao da soma de dois dados com probabilidades
+simulacao = replicate(10000, 
+                      sample(2:12, 
+                      replace=TRUE, 
+                      prob=c(1,2,3,4,5,6,5,4,3,2,1)/36))
+qplot(simulacao, binwidth=1)
+mean(simulacao)
