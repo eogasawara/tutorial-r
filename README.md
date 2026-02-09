@@ -16,3 +16,7 @@ Cada item inclui o PDF e o exemplo correspondente em Markdown.
 11. [11 - Ordenacao](11-Ordenacao.pdf) - Ordenacao, ranqueamento e estrategias para organizar vetores e tabelas. ([Exemplo](examples/11-Ordenacao.md))
 12. [12 - Manipulacao de Dados](12-Manipulacao-Dados.pdf) - Transformacoes e limpeza de dados, reorganizando colunas e valores. ([Exemplo](examples/12-Manipulacao-Dados.md))
 13. [13 - S3 Classes](13-S3-Classes.pdf) - Introducao ao sistema de classes S3, metodos genericos e personalizacao de comportamento. ([Exemplo](examples/13-S3-Classes.md))
+
+## Playlist
+
+https://www.youtube.com/playlist?list=PLTy3TWJeueGyLQV3jTKrUy_OSkjB2zNnh
