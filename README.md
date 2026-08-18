@@ -1,22 +1,42 @@
-# Slides de programacao em R
+# Tutorial de R
 
-Abaixo esta a lista numerada das apresentacoes em PDF com o titulo e uma breve descricao.
-Cada item inclui o PDF e o exemplo correspondente em Markdown.
+## Tutorial Introdutório à Linguagem R
 
-1. [01 - Introducao](01-Introducao.pdf) - Panorama da disciplina e da abordagem de metodologia cientifica aplicada ao uso do R. ([Exemplo](examples/01-Introducao.md))
-2. [02 - Pacotes e Ajuda](02-Pacotes-Ajuda.pdf) - Instalacao e carregamento de pacotes, alem de formas de consultar a documentacao e exemplos. ([Exemplo](examples/02-Pacotes-Ajuda.md))
-3. [03 - Objetos](03-Objetos.pdf) - Tipos e criacao de objetos no R, incluindo vetores, matrizes e como converter entre formatos. ([Exemplo](examples/03-Objetos.md))
-4. [04 - Notacao](04-Notacao.pdf) - Notacao para acessar e manipular elementos de vetores, matrizes, listas e data frames. ([Exemplo](examples/04-Notacao.md))
-5. [05 - Modificacao de Valores](05-Modificacao-Valores.pdf) - Tecnicas para atualizar e substituir conteudos em objetos existentes. ([Exemplo](examples/05-Modificacao-Valores.md))
-6. [06 - Estrutura de Repeticao](06-Estrutura-Repeticao.pdf) - Uso de estruturas de controle como condicoes e lacos para automatizar tarefas. ([Exemplo](examples/06-Estrutura-Repeticao.md))
-7. [07 - Fatores](07-Fatores.pdf) - Criacao, ordenacao e manipulacao de fatores para variaveis categoricas. ([Exemplo](examples/07-Fatores.md))
-8. [08 - Listas](08-Listas.pdf) - Organizacao de dados heterogeneos em listas e acesso a seus componentes. ([Exemplo](examples/08-Listas.md))
-9. [09 - Data Frames](09-Data-Frames.pdf) - Estrutura tabular no R, combinando colunas, selecionando e filtrando observacoes. ([Exemplo](examples/09-Data-Frames.md))
-10. [10 - Apply](10-Apply.pdf) - Iteracao funcional com a familia apply para percorrer colecoes e resumir resultados. ([Exemplo](examples/10-Apply.md))
-11. [11 - Ordenacao](11-Ordenacao.pdf) - Ordenacao, ranqueamento e estrategias para organizar vetores e tabelas. ([Exemplo](examples/11-Ordenacao.md))
-12. [12 - Manipulacao de Dados](12-Manipulacao-Dados.pdf) - Transformacoes e limpeza de dados, reorganizando colunas e valores. ([Exemplo](examples/12-Manipulacao-Dados.md))
-13. [13 - S3 Classes](13-S3-Classes.pdf) - Introducao ao sistema de classes S3, metodos genericos e personalizacao de comportamento. ([Exemplo](examples/13-S3-Classes.md))
+Este tutorial em vídeo oferece uma introdução prática e progressiva à linguagem R, amplamente utilizada na análise de dados, estatística e ciência de dados. A sequência de vídeos abrange desde os conceitos básicos até técnicas mais avançadas de manipulação de dados, com exemplos claros e código disponível para acompanhamento.
+
+## Slides
+
+1. [Introdução ao R](https://github.com/eogasawara/tutorial-r/blob/main/01-Introducao.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/01-Introducao.md)
+2. [Pacotes e Ajuda](https://github.com/eogasawara/tutorial-r/blob/main/02-Pacotes-Ajuda.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/02-Pacotes-Ajuda.md)
+3. [Objetos](https://github.com/eogasawara/tutorial-r/blob/main/03-Objetos.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/03-Objetos.md)
+4. [Notação](https://github.com/eogasawara/tutorial-r/blob/main/04-Notacao.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/04-Notacao.md)
+5. [Modificação de valores](https://github.com/eogasawara/tutorial-r/blob/main/05-Modificacao-Valores.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/05-Modificacao-Valores.md)
+6. [Estrutura de Repetição](https://github.com/eogasawara/tutorial-r/blob/main/06-Estrutura-Repeticao.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/06-Estrutura-Repeticao.md)
+7. [Fatores](https://github.com/eogasawara/tutorial-r/blob/main/07-Fatores.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/07-Fatores.md)
+8. [Listas](https://github.com/eogasawara/tutorial-r/blob/main/08-Listas.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/08-Listas.md)
+9. [Data frame](https://github.com/eogasawara/tutorial-r/blob/main/09-Data-Frames.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/09-Data-Frames.md)
+10. [Apply](https://github.com/eogasawara/tutorial-r/blob/main/10-Apply.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/10-Apply.md)
+11. [Ordenação](https://github.com/eogasawara/tutorial-r/blob/main/11-Ordenacao.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/11-Ordenacao.md)
+12. [Manipulação de dados](https://github.com/eogasawara/tutorial-r/blob/main/12-Manipulacao-Dados.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/12-Manipulacao-Dados.md)
+13. [Classes S3](https://github.com/eogasawara/tutorial-r/blob/main/13-S3-Classes.pdf) - [código](https://github.com/eogasawara/tutorial-r/blob/main/examples/13-S3-Classes.md)
+
+## Repositório
+
+<https://github.com/eogasawara/tutorial-r>
 
 ## Playlist
 
-https://www.youtube.com/playlist?list=PLTy3TWJeueGyLQV3jTKrUy_OSkjB2zNnh
+[Programação em R para Análise de Dados](https://www.youtube.com/playlist?list=PLTy3TWJeueGyLQV3jTKrUy_OSkjB2zNnh)
+
+[![Assistir a playlist no YouTube](https://img.shields.io/badge/YouTube-Assistir%20playlist-red?logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLTy3TWJeueGyLQV3jTKrUy_OSkjB2zNnh)
+
+## Bibliografia
+
+1. Chang, W. R Graphics Cookbook: Practical Recipes for Visualizing Data. O'Reilly Media, Inc., 2018.
+2. Wickham, H.; Bryan, J. R Packages: Organize, Test, Document, and Share Your Code. O'Reilly Media, Inc., 2023.
+3. Wickham, H.; Grolemund, G. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. O'Reilly Media, Inc., 2016.
+4. Grolemund, G. Hands-On Programming with R. O'Reilly Media, Inc., 2014.
+
+## Issues
+
+Deixe bugs, dúvidas e sugestões em <https://github.com/eogasawara/tutorial-r/issues>.
